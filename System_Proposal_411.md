@@ -9,10 +9,32 @@ Business Values: Students will benefit with less stress and confusion when it co
 Special Issues or Constraints: The capabilities described are limited to those in the CIS department currently, but this system is to be designed to be replicated and expanded to other departments in the future. One issue for this project is integrating the information from the current systems into this application.
 
 
-# 2. Work Plan
+## 2. Work plan
+> The original work plan revised after having completed the analysis phase.
+### Gantt Chart
+```mermaid 
+gantt
+    dateFormat  YYYY-MM-DD
+    title       YOUR PROJECT TITLE HERE
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
+    section Section A
+    A.1 Create Database Structure       :         des1, 2024-08-20,2024-09-03
+    A.2 Add Info to Database            :         des2, 2024-09-04,2024-09-25
+    A.3 Display Info on Site            :         des3, 2024-09-26, 2024-10-24
+    A.4 Implement Functionality         :         des4, 2024-10-25, 2024-12-06
 
+    section Section B
+    B.1 Meet with Department Chair      :         des5, 2024-08-26, 2024-09-16
+    B.2 Department Gathering Info       :         des6, 2024-09-17, 2024-10-01
+    B.3 Gather Course Info              :         des7, 2024-10-02, 2024-10-09
+    B.4 Create HTML Skeleton            :         des8, 2024-10-10, 2024-10-31
+    B.5 Style Site                      :         des9, 2024-11-01, 2024-11-08
+    B.6 Work with Faculty               :         des10, 2024-11-11, 2024-11-25
+    
 
+```
 
 # 3. Feasibility Analysis
 <h3> Technical Feasibility </h3>
