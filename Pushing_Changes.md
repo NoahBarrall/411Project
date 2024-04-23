@@ -13,6 +13,13 @@
 - git push -u origin main
 
 
-Thank you, Bryan.
+# Syncing up any changes
+
+### In the terminal, type: 
+
+- git fetch
+- git pull
+
+### Do this step before making any changes to confirm both repos match
 
 
