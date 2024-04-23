@@ -6,7 +6,7 @@
 2. Clone your repository
 
 ## Once that is done, repeat the next 3 steps whenever you need to push changes
-### In the terminal type: 
+### In the terminal, type: 
 
 - git add *
 - git commit -a -m "Commit message"
