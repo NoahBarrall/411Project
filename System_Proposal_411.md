@@ -10,7 +10,7 @@ Special Issues or Constraints: The capabilities described are limited to those i
 
 
 ## 2. Work plan
-> The original work plan revised after having completed the analysis phase.
+
 ### Gantt Chart
 ```mermaid 
 gantt
@@ -83,7 +83,6 @@ gantt
 
 ## 5. Logical Design
 
-> A set of use cases that illustrate the basic processes that the system needs to support.
 
 ### 5.1 Sequence Diagram
 
@@ -95,7 +94,7 @@ sequenceDiagram
    J->>S: Opens webpage
    S-->>J: Lists courses
 
-   
+
 
 ```
 
