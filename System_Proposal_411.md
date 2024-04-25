@@ -61,25 +61,43 @@ gantt
 
 
 # 4. Requirements Definition
+
 <h3> Functional Requirements: </h3>
 
-- <br>
+- <b>1. Displaying course information</b> <br>
+  - 1.1 System should connect to database to select all CIS courses.<br>
+  - 1.2 System displays the classes on the page in order of course number.<br>
+  - 1.3 System allows user to click on each course for more details.<br>
+  - 1.4 System fetches details from the course and displays it on the page.<br>
 
-- <br>
+- <b>2. Calculate Semester Plan</b> <br>
+  - 2.1 Process selected major and concentration from user.<br>
+  - 2.2 Connects to database to determine which classes the user needs to take and get their data.<br>
+  - 2.3 System will calculate when each course needs to be taken.<br>
+  - 2.4 System will display the calculated course plan.<br>
+  - 2.5 System will enable the user to print the displayed course plan. <br>
 
-- <br>
 
-- <br>
 
 <h3> Nonfunctional Requirements: </h3>
 
 - <b>Operational</b> <br>
+    - 1.1 The system should be Web-based and run on any browser.<br>
+    - 1.2 The system should connect to printers wirelessly. <br>
+    - 1.3 The system should run on mobile devices for user efficiency. <br>
 
 - <b>Performance</b> <br>
+  - 2.1 The system should update it's content whenever there is new data entered into the database.<br>
+  - 2.2 The system should provide response times in 2 seconds or less.<br>
+  - 2.3 The system should support 75 users at all times.<br>
 
 - <b>Security</b> <br>
+    - 3.1 The system will be secured using Messiah's two-factor authentication methods so that only Messiah staff and students will be able to access the site. <br>    
+    - 3.2 The database holding the information on classes will be only accessed by the department head.<br>
 
 - <b>Cultural and Political</b> <br>
+  - 4.1 System should be limited to CIS & Cyber students.<br>
+
 
 ## 5. Logical Design
 
@@ -164,7 +182,6 @@ sequenceDiagram
 |3. User selects major, minor, or concentration requirements desired||
 |4. System displays requirements for selected major, minor, or concentration||
 |5. User recieves desired requirements information||
-
 
 > __Postconditions__ :
 >   1. User returns to homepage
