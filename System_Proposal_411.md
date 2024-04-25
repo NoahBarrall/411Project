@@ -89,11 +89,13 @@ gantt
 
 ```mermaid
 sequenceDiagram
-   actor J as John
+   actor J as User
    participant S as System
 
-   S->>J: Enter user name and password
-   J-->>S: Types username and password
+   J->>S: Opens webpage
+   S-->>J: Lists courses
+
+   
 
 ```
 
