@@ -80,3 +80,132 @@ gantt
 - <b>Security</b> <br>
 
 - <b>Cultural and Political</b> <br>
+
+## 5. Logical Design
+
+> A set of use cases that illustrate the basic processes that the system needs to support.
+
+### 5.1 Sequence Diagram
+
+```mermaid
+sequenceDiagram
+   actor J as John
+   participant S as System
+
+   S->>J: Enter user name and password
+   J-->>S: Types username and password
+
+```
+
+### 5.2 Use Cases
+> *Reference Chapter 4*
+
+#### Use Case Name:  Viewing Course Information
+
+> __ID__ : UC-01
+
+> __Priority__ : High
+
+> __Actor__ : Student/Faculty
+
+> __Description__ : The user wants to view class information.
+
+> __Trigger__ : User wants to view course information of upcoming classes.
+
+> __Type__ : External
+
+> __Preconditions__ :
+>   1. The user is currently viewing the application with a stable connection   
+
+
+| Normal Course: | Information for Steps |
+|---|---|
+|1.0 Viewing course information||
+|1. User opens website|   |
+|2. User navigates to the desired course| |
+|3. User selects desired course|<-- User clicks on course number|
+|4. Window opens up with course information| |
+|5. User selects specific section of class||
+|6. User views desired information||
+
+> __Postconditions__ :
+>   1. User closes out of pop-up window
+
+|Summary Inputs|Source|Summary Outputs| Destination|
+|---|---|---|---|
+|Opening webpage|Database|List of courses|User|
+|Selecting course|Database|Display course information|User|
+
+#### Use Case Name:  Viewing Major/Minor/Concentration Requirements
+
+> __ID__ : UC-02
+
+> __Priority__ : High
+
+> __Actor__ : Student
+
+> __Description__ : The user wants to view major/minor/concentration requirements
+
+> __Trigger__ : User wants to view requirements for their major/minor/concentration
+
+> __Type__ : External
+
+> __Preconditions__ :
+>   1. The user is currently viewing the application with a stable connection
+>   2. User is aware of their current major/minor/concentration 
+
+
+| Normal Course: | Information for Steps |
+|---|---|
+|1.0 View Major/Minor/Concentration Requirements||
+|1. User opens website|   |
+|2. User selects tab option to view requirements | |
+|3. User selects major, minor, or concentration requirements desired||
+|4. System displays requirements for selected major, minor, or concentration||
+|5. User recieves desired requirements information||
+
+
+> __Postconditions__ :
+>   1. User returns to homepage
+
+|Summary Inputs|Source|Summary Outputs| Destination|
+|---|---|---|---|
+|Selecting course|Database|Display required courses|User|
+
+
+#### Use Case Name:  Printing
+
+> __ID__ : UC-03
+
+> __Priority__ : High
+
+> __Actor__ : Student/Faculty
+
+> __Description__ : The user wants to print a hard copy of displayed information on website
+
+> __Trigger__ : User decides to print current page
+
+> __Type__ : External
+
+> __Preconditions__ :
+>   1. The user is currently viewing the application with a stable connection
+>   2. User is connected to a printer
+>   3. User navigates to desired page to print 
+
+
+| Normal Course: | Information for Steps |
+|---|---|
+|1.0 Printing||
+|1. User selects print button|   |
+|2. User customizes page how they want to print | |
+|3. User selects print||
+
+> __Postconditions__ :
+>   1. Hard copy gets printed
+>   2. User receives hard copy from printer
+
+|Summary Inputs|Source|Summary Outputs|Destination|
+|---|---|---|---|
+|Hitting print button|Current Page|Hard copy of page|Printer|
+
+
