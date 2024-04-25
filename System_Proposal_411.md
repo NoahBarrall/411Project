@@ -94,6 +94,9 @@ sequenceDiagram
    J->>S: Opens webpage
    S-->>J: Lists courses
 
+   J->>S: Selects desired course
+   J-->>J: Open window displaying information for course-
+
 
 
 ```
