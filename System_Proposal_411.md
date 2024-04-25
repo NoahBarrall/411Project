@@ -62,6 +62,10 @@ gantt
 
 # 4. Requirements Definition
 
+<b>Project Sponsor:</b> Bryan Birch, Jacob Hamm, Noah Barrall, Michael Keeports <br>
+<b>Project champion:</b> Devi Suberi<br>
+<b>All users using the system:</b> the system will be used by messiah computer science department faculty to update course information, and by computer science students who will use the system to plan their semesters. <br>
+
 <h3> Functional Requirements: </h3>
 
 - <b>1. Displaying course information</b> <br>
