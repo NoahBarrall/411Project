@@ -115,10 +115,16 @@ sequenceDiagram
 
    J->>S: Opens webpage
    S-->>J: Lists courses
-
    J->>S: Selects desired course
-   J-->>J: Open window displaying information for course-
+   S-->>J: Open window displaying information for course
+   
+   J->>S: Selects option to view requirements
+   S-->J: Displays requirements page
+   J->>S: Chooses major/minor/concetration to view requirements
+   S-->J: Displays requirements
 
+   J->>S: Presses print button
+   S-->J: Sents print information to printer
 
 
 ```
