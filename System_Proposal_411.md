@@ -117,20 +117,13 @@ sequenceDiagram
    S-->>J: Lists courses
    J->>S: Selects desired course
    S-->>J: Open window displaying information for course
-   
-   J->>S: Selects option to view requirements
-   S-->J: Displays requirements page
-   J->>S: Chooses major/minor/concetration to view requirements
-   S-->J: Displays requirements
+   J->>S: Views needed course information and closes out of window
 
-   J->>S: Presses print button
-   S-->J: Sents print information to printer
 
 
 ```
 
 ### 5.2 Use Cases
-> *Reference Chapter 4*
 
 #### Use Case Name:  Viewing Course Information
 
