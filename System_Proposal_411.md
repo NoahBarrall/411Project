@@ -15,7 +15,7 @@ Special Issues or Constraints: The capabilities described are limited to those i
 ```mermaid 
 gantt
     dateFormat  YYYY-MM-DD
-    title       YOUR PROJECT TITLE HERE
+    title       Messiah Course Viewer
     excludes    weekends
     %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
@@ -235,25 +235,24 @@ sequenceDiagram
 ### 5.3 Process Model (Data Flow Diagram)
 > A set of process models and descriptions for the to‐be system. This may include process models of the current as‐is system that will be replaced.
 
-![](DFD.png)
+```mermaid
+flowchart 
+
+A([Messiah Course Viewer])
+
+B[User]
+
+C[Network]
+
+B -- Searches for information --> A
+A -- Returns course information --> B
+A -- Returns requirements for Maj/Min/Conc --> B
+A -- Sends print information --> C
+
+
+
+```
 
 ### 5.5 Structure Chart
 
-```mermaid
-graph TD;
-    A["System (1)"] --> B["User Interface (2)"];
-    B --> C["View Class Information (3)"];
-    C --> D["Open Website (4)"];
-    C --> E["Navigate to Course (5)"];
-    C --> F["Select Course (6)"];
-    C --> G["Display Course Information (7)"];
-    C --> H["Select Specific Section (8)"];
-    B --> I["Print Functionality (9)"];
-    I --> J["Select Print (10)"];
-    I --> K["Customize Page (11)"];
-    I --> L["Print Page (12)"];
-    A --> M["View Requirements (13)"];
-    M --> N["Open Website (14)"];
-    M --> O["Select Requirements Tab (15)"];
-    M --> P["Select Major/Minor/Concentration (16)"];
-    M --> Q["Display Requirements (17)"];
+![](StructureChart.png)
