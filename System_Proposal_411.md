@@ -232,6 +232,9 @@ sequenceDiagram
 |---|---|---|---|
 |Hitting print button|Current Page|Hard copy of page|Printer|
 
+### 5.4 Data Model (Entity Relationship Diagram)
+![](ERD.png)
+
 ### 5.3 Process Model (Data Flow Diagram)
 > A set of process models and descriptions for the to‐be system. This may include process models of the current as‐is system that will be replaced.
 
