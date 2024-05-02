@@ -236,24 +236,29 @@ sequenceDiagram
 ![](ERD.png)
 
 ### 5.3 Process Model (Data Flow Diagram)
-> A set of process models and descriptions for the to‐be system. This may include process models of the current as‐is system that will be replaced.
 
 ```mermaid
 flowchart TD;
-    A([Messiah Course Viewer]) -->|1.0| B[User];
+    A([Messiah Course Viewer])
+    B[User];
     B -->|1.1| C[Searches for Class Information];
+    B -->|1.2| P[Searches for Maj/Min/Conc Reqs];
     C -->|1.1.1| D[Open Website];
     C -->|1.1.2| E[Navigate to Course];
     C -->|1.1.3| F[Select Course];
     C -->|1.1.4| G[Display Course Information];
+    A --> B;
+    G --> B;
     C -->|1.1.5| H[Select Specific Section];
     H -->|1.1.5.1| I[View Desired Information];
-    A -->|1.2| J[Returns Course Information];
-    A -->|1.3| K[Returns Requirements for Maj/Min/Conc];
-    A -->|1.4| L[Sends Print Information];
-    L -->|1.4.1| M[Selects Print Option];
-    L -->|1.4.2| N[Customizes Printing];
-    L -->|1.4.3| O[Prints Hard Copy];
+    A -->|1.3| L[Sends Print Information];
+    L -->|1.3.1| M[Selects Print Option];
+    L -->|1.3.2| N[Customizes Printing];
+    L -->|1.3.3| O[Prints Hard Copy];
+    P -->|1.2.1| D
+    P -->|1.2.2| Q[Select Maj/Min/Conc];
+    P -->|1.2.3| R[Display Requirements];
+    P --> B;
 
 
 
