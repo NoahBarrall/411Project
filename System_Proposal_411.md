@@ -1,4 +1,4 @@
-# 1. System Request
+## 1. System Request
 Project Sponsor: Bryan Birch, Jacob Hamm, Noah Barrall, Michael Keeports <br> <br>
 Business Need: This project has been initiated to help confusion for CIS students at Messiah University when it comes to finding information for course registration. Currently there are over three different systems used for finding course registration information, and those systems are not always up to date or they can conflict with one another. <br> <br>
 
