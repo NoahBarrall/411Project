@@ -243,7 +243,6 @@ flowchart TD;
     B[User];
     B -->|1.1| C[Searches for Class Information];
     B -->|1.2| P[Searches for Maj/Min/Conc Reqs];
-    C -->|1.1.1| D[Open Website];
     C -->|1.1.2| E[Navigate to Course];
     C -->|1.1.3| F[Select Course];
     C -->|1.1.4| G[Display Course Information];
@@ -255,7 +254,6 @@ flowchart TD;
     L -->|1.3.1| M[Selects Print Option];
     L -->|1.3.2| N[Customizes Printing];
     L -->|1.3.3| O[Prints Hard Copy];
-    P -->|1.2.1| D
     P -->|1.2.2| Q[Select Maj/Min/Conc];
     P -->|1.2.3| R[Display Requirements];
     P --> B;
